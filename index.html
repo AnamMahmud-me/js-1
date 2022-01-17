@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade System</title>
+
+  <!-- bootstrap linkup -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-lg py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="text-center text-danger">Grade System</h1>
+        <form action="">
+          <label for="">Student Name</label>
+          <input class="form-control" type="text" id="studentName">
+          <label for="" class="mt-2">Bangla</label>
+          <input class="form-control" type="number" id="mark1">
+          <label for="" class="mt-2">English</label>
+          <input class="form-control" type="number" id="mark2">
+          <label for="" class="mt-2">Math</label>
+          <input class="form-control" type="number" id="mark3">
+          <button onclick="myFunction()" class="btn btn-outline-primary px-4 mt-2">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <div class="col-md-10">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr class="text-center">
+              <th class="text-start">Name:</th>
+              <th>Bangla</th>
+              <th>English</th>
+              <th>Math</th>
+              <th>Total Mark</th>
+              <th>Average Mark</th>
+              <th>GPA</th>
+              <th>Grade</th>
+            </tr>
+          
+            <tr class="text-center">
+              <td class="text-start" id="name">Mr. X</td>
+              <td id="bangla_mark"></td>
+              <td id="english_mark"></td>
+              <td id="math_mark"></td>
+              <td id="total_mark"></td>
+              <td id="average_mark"></td>
+              <td id="gpa"></td>
+              <td id="grade"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+
+
+
+  <!-- js linkup -->
+  <script src="app.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
